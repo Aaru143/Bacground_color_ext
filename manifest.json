@@ -1,0 +1,29 @@
+{
+    //https://www.youtube.com/watch?v=uh84Asy2W4s
+    "name": "Change Background Colors",
+    "version": "1.0",
+    "manifest_version": 2,
+    
+    //ading the descriptions and the icon that should be displayed
+    //description for webpage
+    "description": "Change the background color of any page",
+    "icons": {
+        //128X128 - webstore
+        //48x48 - extension mangement page
+        //16x16 - web browser
+        "128": "colors.jpg"
+    },
+    
+    //telling what kind of thing the extension is
+    "browser_action": {
+        //the title displayed when you hover
+        "default_title": "Change Colors",
+        //should include the HTML file that would show how the extension looks
+        "default_popup": "popup.html"
+    },
+    
+    //permissions for the extensions
+    "permissions": [
+        "http://*/*", "https://*/*"
+    ]
+}
